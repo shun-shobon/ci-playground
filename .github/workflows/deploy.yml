@@ -5,7 +5,6 @@ on:
       - test
     types:
       - completed
-      - requested
 
 jobs:
   deploy:
