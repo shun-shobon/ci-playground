@@ -2,6 +2,7 @@ name: deploy
 on:
   workflow_run:
     workflows:
+      - lint
       - test
     types:
       - completed
@@ -10,4 +11,4 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This is deploy."
+      - run: echo "This is deploy job."
