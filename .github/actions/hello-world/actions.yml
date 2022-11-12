@@ -1,0 +1,9 @@
+name: Hello World
+inputs:
+  name:
+    description: Name
+    required: true
+runs:
+  using: composite
+  steps:
+    - run: echo "Hello ${{ inputs.name }}"

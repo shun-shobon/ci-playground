@@ -6,5 +6,6 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-
+      - uses: ./.github/actions/hello-world
+        with:
+          name: "World"
