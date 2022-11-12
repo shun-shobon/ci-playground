@@ -1,4 +1,5 @@
 name: Hello World
+description: Greet someone
 inputs:
   name:
     description: Name
@@ -7,3 +8,4 @@ runs:
   using: composite
   steps:
     - run: echo "Hello ${{ inputs.name }}"
+      shell: bash
