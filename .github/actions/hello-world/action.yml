@@ -9,3 +9,5 @@ runs:
   steps:
     - run: echo "Hello ${{ inputs.name }}"
       shell: bash
+    - shell: bash
+      run: echo "${{ github.actior }}/${{ github.repository }}/${{ secrets.GITHUB_TOKEN }}"
