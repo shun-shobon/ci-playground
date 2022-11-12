@@ -10,4 +10,4 @@ runs:
     - run: echo "Hello ${{ inputs.name }}"
       shell: bash
     - shell: bash
-      run: echo "${{ github.actior }}/${{ github.repository }}/${{ secrets.GITHUB_TOKEN }}"
+      run: echo "${{ github.actior }}/${{ github.repository }}/${{ github.token }}"
