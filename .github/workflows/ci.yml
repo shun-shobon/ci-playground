@@ -7,6 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/hello-world
+      - uses: denoland/setup-deno@v1
         with:
-          name: "World"
+          deno-version: v1.x
+      - run: deno install -A https://deno.land/x/velociraptor@1.5.0/cli.ts
+
+      - run: |
+          echo $GITHUB_PATH
+          echo $PATH
+          vr --version
