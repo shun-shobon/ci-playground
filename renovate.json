@@ -5,14 +5,14 @@
     {
       "fileMatch": ["\\.tsx?$"],
       "matchStrings": [
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"](?<depName>https://deno.land/.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?)/.*?['\"]"
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"](?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?)/.*?['\"]"
       ],
       "datasourceTemplate": "deno"
     },
     {
       "fileMatch": ["^import_map.json$"],
       "matchStrings": [
-        "\".+?\"\\s*:\\s*\"(?<depName>https://deno.land/.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
+        "\".+?\"\\s*:\\s*\"(?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
       ],
       "datasourceTemplate": "deno"
     },
