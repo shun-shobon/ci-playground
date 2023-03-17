@@ -5,7 +5,7 @@
     {
       "fileMatch": ["\\.tsx?$"],
       "matchStrings": [
-        "(?:im|ex)port\\s*.*\\s*from\\s*['\"](?<depName>https://deno.land/.*?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?)/.*?['\"]"
+        "(?:im|ex)port.+?from\\s*['\"](?<depName>https://deno.land/.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?)/.*?['\"]"
       ],
       "datasourceTemplate": "deno"
     }
