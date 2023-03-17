@@ -1,0 +1,5 @@
+{
+  "deno.enable": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false
+}
