@@ -13,4 +13,4 @@ CookieMapOptions,
   CookieMapSetDeleteOptions
 }             from"https://deno.land/std@0.194.0/http/mod.ts"     ;
 
-import { zodToJsonSchema } from "npm:zod-to-json-schema@3.20.5"
+import { zodToJsonSchema } from "npm:zod-to-json-schema@3.21.4"
