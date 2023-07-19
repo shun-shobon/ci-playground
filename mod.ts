@@ -1,5 +1,5 @@
 export * from "https://deno.land/std@0.194.0/testing/asserts.ts";
-import { build, emptyDir } from "https://deno.land/x/dnt@0.37.0/mod.ts";
+import { build, emptyDir } from "https://deno.land/x/dnt@0.38.0/mod.ts";
 import* as fs from "https://deno.land/std@0.194.0/fs/mod.ts";
 import {
   copy,
