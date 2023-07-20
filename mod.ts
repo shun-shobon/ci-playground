@@ -1,9 +1,9 @@
-export * from "https://deno.land/std@0.194.0/testing/asserts.ts";
+export * from "https://deno.land/std@0.195.0/testing/asserts.ts";
 import { build, emptyDir } from "https://deno.land/x/dnt@0.38.0/mod.ts";
-import* as fs from "https://deno.land/std@0.194.0/fs/mod.ts";
+import* as fs from "https://deno.land/std@0.195.0/fs/mod.ts";
 import {
   copy,
-} from "https://deno.land/std@0.194.0/fs/mod.ts";
+} from "https://deno.land/std@0.195.0/fs/mod.ts";
 import{
 Cookie,
   ConnInfo,
@@ -11,6 +11,6 @@ Cookie,
   CookieMap,
 CookieMapOptions,
   CookieMapSetDeleteOptions
-}             from"https://deno.land/std@0.194.0/http/mod.ts"     ;
+}             from"https://deno.land/std@0.195.0/http/mod.ts"     ;
 
 import { zodToJsonSchema } from "npm:zod-to-json-schema@3.21.4"
