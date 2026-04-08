@@ -1,33 +1,29 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>shun-shobon/renovate-config", ":dependencyDashboard"],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["\\.tsx?$"],
-      "matchStrings": [
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"](?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"
-      ],
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.tsx?$/"],
+      "matchStrings": ["(?:im|ex)port(?:.|\\s)+?from\\s*['\"](?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"],
       "datasourceTemplate": "deno"
     },
     {
-      "fileMatch": ["^import_map.json$"],
-      "matchStrings": [
-        "\".+?\"\\s*:\\s*\"(?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
-      ],
+      "customType": "regex",
+      "managerFilePatterns": ["/^import_map.json$/"],
+      "matchStrings": ["\".+?\"\\s*:\\s*\"(?<depName>https://deno.land/.+?)@v?(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""],
       "datasourceTemplate": "deno"
     },
     {
-      "fileMatch": ["\\.tsx?$"],
-      "matchStrings": [
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"
-      ],
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.tsx?$/"],
+      "matchStrings": ["(?:im|ex)port(?:.|\\s)+?from\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?['\"]"],
       "datasourceTemplate": "npm"
     },
     {
-      "fileMatch": ["^import_map.json$"],
-      "matchStrings": [
-        "\".+?\"\\s*:\\s*\"npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""
-      ],
+      "customType": "regex",
+      "managerFilePatterns": ["/^import_map.json$/"],
+      "matchStrings": ["\".+?\"\\s*:\\s*\"npm:(?<depName>.+?)@(?<currentValue>\\d+?\\.\\d+?\\.\\d+?).*?\""],
       "datasourceTemplate": "npm"
     }
   ]
